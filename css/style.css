@@ -1,0 +1,107 @@
+*
+{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #42424e; 
+    
+}
+
+main
+{
+
+    width: 80%;
+    height: 80vh;
+    margin: 60px auto;
+    background-color: rgba(30, 26, 40, 0.767);
+    box-sizing: border-box;
+    display: flex;
+    backdrop-filter: grayscale() blur(10px);
+    box-shadow: 3px 3px 20px rgba(255, 255, 255, 0.719);
+    
+
+
+}
+
+#menu 
+{
+    background-color: rgba(53, 43, 80, 0.863);
+    width: 20%;
+    height: 100%;
+}
+.conteudo
+{
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+}
+
+nav
+{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+nav a 
+{
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+nav a img
+{
+    width: 100px;
+    height: 100px;
+}
+
+#menu ul li 
+{
+    text-align: center;
+    display: inline-block;
+    margin-top: 170px;    
+}
+.conteudo 
+{
+    display: table;
+}
+.conteudo div 
+{
+    margin: 50px 50px 0 50px;
+}
+
+.conteudo div p
+{
+    margin-top: 50px;
+    text-align: justify;
+}
+.conteudo div h1 
+{
+    display: inline;
+    border-bottom: solid 2px rgb(235, 73, 132);
+    font-size: 25px;
+}
+hr
+{
+    color: rgb(235, 73, 132);
+}
+.conteudo div h2
+{
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.conteudo div a 
+{
+
+    margin-top: 50px;
+    font-size: 20px;
+    margin-left: 50%;
+    margin-bottom: 50px;
+}
