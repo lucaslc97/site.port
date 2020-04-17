@@ -41,8 +41,9 @@ body
 
    #menu #botoes 
    {
-       margin-top: 40px;
-       margin-left: 15%;
+       margin-top: 20px;
+       margin-left: 20%;
+    
    }
 
    #foto a  img 
@@ -54,19 +55,28 @@ body
    {
        margin-top: 50px;
        text-align: center;
-       margin-left: 43%;
+       margin-left: 37%;
       
    }
 
 #botoes a 
 {
     
-    display: inline-block;
-    padding: 15px 40px 15px 40px ;
+    padding: 15px 20px 15px 20px ;
     text-decoration: none;
-    text-align: center;
-
+    text-align: justify;
+    background-color: #42424e3f;
+    display: none;
 }
+
+#botao-hamb
+{
+    display: block;
+    margin-left: 28%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
 
 #foto a img
 {
@@ -77,10 +87,10 @@ body
 #menu ul a
 {
     text-align: center;
-    display: inline-block;
-    margin-top: 30px;   
-    margin-bottom: 10px; 
-    padding-left: 43%;
+    margin-bottom: 5px; 
+    margin-left: 60%;
+    float: left;
+    margin-top: -70px;
 }
 .conteudo 
 {
@@ -143,18 +153,131 @@ i:hover{
 
 @media (min-width:480px)
 {
-
+    #menu #botoes 
+    {
+        margin-top: 20px;
+        margin-left: 15%;
+       
+    }
+ 
+    #foto a  img 
+    {
+        margin-top: 20px;
+    }
+ 
+    #foto a 
+    {
+        margin-top: 50px;
+        text-align: center;
+        margin-left: 40%;
+       
+    }
+ 
+ #botoes a 
+ {
+     
+     padding: 15px 40px 15px 40px ;
+     text-decoration: none;
+     text-align: center;
+     display: none;
+     background-color: #42424e3f;
+ }
+ 
+ 
 }
 
 @media (min-width:600px) 
 {
+    #menu #botoes 
+    {
+        margin-top: 20px;
+        margin-left: 15%;
 
+    }
+ 
+    #foto a  img 
+    {
+        margin-top: 20px;
+    }
+ 
+    #foto a 
+    {
+        margin-top: 50px;
+        text-align: center;
+        margin-left: 40%;
+       
+    }
+ 
+ #botoes a 
+ {
+     
+     display: none;
+     padding: 15px 40px 15px 40px ;
+     text-decoration: none;
+     text-align: center;
+ 
+ }
+ 
+ #foto a img
+ {
+     width: 100px;
+     height: 100px;
+ }
 }
 
 @media (min-width:801px)
  { 
-    
+    #menu #botoes 
+    {
+        margin-top: 20px;
+        margin-left: 15%;
+        display: inline-block;
+        background: none;
 
+    }
+ 
+    #foto a  img 
+    {
+        margin-top: 20px;
+    }
+ 
+    #foto a 
+    {
+        margin-top: 50px;
+        text-align: center;
+        margin-left: 43%;
+       
+    }
+    #botao-hamb 
+{
+    display: none;
+}
+ 
+ #botoes a 
+ {
+     
+     display: inline-block;
+     padding: 15px 40px 15px 40px ;
+     text-decoration: none;
+     text-align: center;
+    background: none;
+ }
+ 
+ #foto a img
+ {
+     width: 100px;
+     height: 100px;
+ }
+
+ #menu ul a
+{
+    float: none;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;   
+    margin-bottom: 10px; 
+    margin-left: 45%;
+}
 
  }
 
@@ -189,6 +312,8 @@ i:hover{
    {
        margin-top: 40px;
        margin-left: 0;
+       background: none;
+        display: block;
    }
 
    #foto a  img 
@@ -208,11 +333,11 @@ i:hover{
 {
     
     display: block;
-    padding: 15px 15px 15px 60px ;
+    padding: 15px 40px 15px 40px;
     text-decoration: none;
     text-align: justify;
     font-size: 18px;
-
+    background: none;
 }
 
 #foto a img
@@ -224,11 +349,16 @@ i:hover{
 
 #menu ul a
 {
+    float: none;
     text-align: center;
     display: inline-block;
     margin-top: 30px;   
     margin-bottom: 10px; 
-    padding-left: 35px;
+    margin-left: 25%;
+}
+#botao-hamb 
+{
+    display: none;
 }
 .conteudo 
 {
@@ -291,8 +421,9 @@ i:hover{
 
 
  
-@media (min-width:1281px) {
+/* Eventos JS */ 
 
-
-
+.abrir
+{
+    display: block;
 }
