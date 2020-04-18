@@ -51,7 +51,7 @@ body
 
    #foto a  img 
    {
-       margin-top: 20px;
+       margin-top: 50px;
    }
 
    #foto a 
@@ -76,8 +76,9 @@ body
 {
     display: block;
     margin-left: 28%;
-    margin-top: 30px;
+    margin-top: 10px;
     cursor: pointer;
+    margin-bottom: 20px ;
 }
 
 
@@ -87,16 +88,9 @@ body
     height: 100px;
 }
 
-#menu ul a
+#menu div 
 {
-    text-align: center;
-    margin-bottom: 5px; 
-    margin-left: 40%;
-    float: left;
-    top: 285px;
-    position: absolute;
-    margin-top: -70px;
-    z-index: 100;
+    display: none;
 }
 .conteudo 
 {
@@ -141,10 +135,10 @@ hr
 #botoes :nth-child(1)
 {
     box-sizing: border-box;
-    border-bottom: solid 5px rgb(235, 73, 132) ;
+    border-bottom: solid 3px rgb(235, 73, 132) ;
     color: rgb(235, 73, 132) ;
 }
-#botoes :nth-child(1):hover, #botoes :nth-child(2):hover, #botoes :nth-child(3):hover, #botoes :nth-child(4):hover
+#botoes :nth-child(1):hover,#botoes :nth-child(2):hover,#botoes :nth-child(3):hover, #botoes :nth-child(4):hover
 {
     background-color: rgba(255, 255, 255, 0.075);
 }
@@ -191,9 +185,9 @@ i:hover{
 
  }
  
- #menu ul a
+ #menu div 
  {
-     margin-left: 40%;
+     display: none;
  }
 
 }
@@ -231,16 +225,9 @@ i:hover{
      position: relative;
  }
 
- #menu ul a
+ #menu div 
 {
-    text-align: center;
-    margin-bottom: 5px; 
-    margin-left: 45%;
-    float: left;
-    top: 51%;
-    position: absolute;
-    margin-top: -70px;
-    z-index: 100;
+    display: none;
 }
  
  #foto a img
@@ -295,17 +282,13 @@ i:hover{
      height: 100px;
  }
 
- #menu ul a
-{
-    float: none;
-    text-align: center;
-    margin-top: 30px;   
-    margin-bottom: 10px; 
-    margin-left: 45%;
-    position: relative;
-    display: inline-block;
-
-}
+ #menu div 
+ {
+     margin-top: 30px;
+     margin-bottom: 30px;
+     margin-left: 47%;
+     display: block;
+ }
 
  }
 
@@ -390,6 +373,14 @@ i:hover{
 {
     display: none;
 }
+#menu div 
+ {
+     margin-top: 30px;
+     margin-bottom: 30px;
+     margin-left: 40%;
+     display: block;
+ }
+
 .conteudo 
 {
     display: table;
@@ -437,7 +428,7 @@ hr
     border-bottom: none;
     color: rgb(235, 73, 132) ;
 }
- nav :nth-child(2):hover, nav :nth-child(3):hover, nav :nth-child(4):hover, nav :nth-child(5):hover
+#botoes :nth-child(1):hover, #botoes :nth-child(2):hover, #botoes :nth-child(3):hover,#botoes :nth-child(4):hover
 {
     background-color: rgba(255, 255, 255, 0.075);
 }
