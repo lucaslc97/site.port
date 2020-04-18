@@ -1,19 +1,18 @@
 
-botao = document.getElementById("botao-hamb")
-
-botao.addEventListener("click", clicou)
+$(document).ready(function () {
 
 
-function clicou() {
-    
-}
-
-function btnMenu() {
-
-    menu = document.querySelectorAll("#botoes a")
-
-    menu.style.display = "block"
-    console.log(menu)
 
 
-}
+
+    $("#botao-hamb").click(function () {
+        $("#botoes").toggle(function (e) {
+            console.log(e)
+        },)
+    })
+
+
+
+
+
+});
