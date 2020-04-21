@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <title>Lucas Cabral Dev</title>
 </head>
 
@@ -19,18 +19,17 @@
             </nav>
             <a id="botao-hamb"><i class="fa fa-bars fa-3x"></i></a>
             <nav id="botoes">
-                <a class="" href="">Sobre</a>
-                <a class="" href="">Skills</a>
-                <a class="" href="">Trabalhos</a>
-                <a class="" href="">Contato</a>
-
+                <a class="botaoClick" value="1" onclick="sobre()" id="sobre ">Sobre</a>
+                <a value="2" onclick="skills()" id="skills">Skills</a>
+                <a value="3" onclick="trabalhos()" id="trabalhos" class="">Trabalhos</a>
+                <a value="4" onclick="contato()" id="contato" class="">Contato</a>
             </nav>
             <div>
-                <a id="gitHub"><i class="fa fa-github fa-3x"></i></a>
+                <a id="gitHub"><i class="fab fa-github fa-3x"></i></a>
             </div>
         </div>
-        <div class="conteudo">
-            <div>
+        <div id="conteudo" class="conteudo">
+            <div v-show='status' id="pagSobre">
                 <h1>Sobre</h1>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id dolor ac odio varius facilisis.
                     Duis urna erat, rhoncus a dui ac, posuere maximus diam. Integer molestie lobortis mauris, a posuere
@@ -39,15 +38,55 @@
                     magna iaculis lobortis cursus id eros. Phasellus sollicitudin, neque vel facilisis semper, odio
                     velit cursus velit, tempus posuere dolor elit vel elit. Proin id dui sollicitudin, convallis nulla
                     ac, efficitur nisi. </p>
+
                 <hr>
                 <h2>Curriculo</h2>
-                <a href=""><i class="fa fa-paperclip fa-2x"></i></a>
+                <a href=""><i class="fas fa-paperclip fa-2x"></i></a>
+            </div>
+
+            <div v-show='status' id="pagSkill">
+                <h1>Skills</h1>
+                <div>
+                    <div>
+                        <i class="fab fa-html5 fa-3x"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div>
+                        <i class="fab fa-css3-alt fa-3x"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div>
+                        <i class="fab fa-js fa-3x"></i>
+                        <p>Javascript</p>
+                    </div>
+                    <div>
+                        <i class="fab fa-bootstrap fa-3x"></i>
+                        <p>Bootstrap</p>
+                    </div>
+                    <div>
+                        <i class="fab fa-vuejs fa-3x"></i>
+                        <p>Vue.js</p>
+                    </div>
+                    <div>
+                        <i class="fab fa-adobe fa-3x"></i>
+                        <p>Pacote Adobe</p>
+                    </div>
+                    <div>
+                        <i class="fab fa-wordpress fa-3x"></i>
+                        <p>Wordpress</p>
+                    </div>
+                    <div>
+                        <i class="fab fa-react fa-3x"></i>
+                        <p>React js</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
-
     <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/vue.js"></script>
 </body>
 
 </html>

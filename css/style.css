@@ -17,7 +17,7 @@ body
     main
     {
     
-        width: 80%;
+        width: 95%;
         margin: 60px auto;
         background-color: rgba(30, 26, 40, 0.767);
         box-sizing: border-box;
@@ -96,17 +96,17 @@ body
 {
     display: table;
 }
-.conteudo div 
+.conteudo div
 {
-    margin: 50px 50px 50px 50px;
+    margin: 50px 25px 50px 25px;
 }
 
-.conteudo div p
+.conteudo #pagSobre p
 {
     margin-top: 50px;
     text-align: justify;
 }
-.conteudo div h1 
+.conteudo #pagSobre h1 
 {
     display: inline;
     border-bottom: solid 2px rgb(235, 73, 132);
@@ -116,14 +116,14 @@ hr
 {
     color: rgb(235, 73, 132);
 }
-.conteudo div h2
+.conteudo #pagSobre h2
 {
     margin-top: 50px;
     font-size: 20px;
     text-align: center;
 }
 
-.conteudo div a 
+.conteudo #pagSobre a 
 {
 
     margin-top: 50px;
@@ -132,10 +132,40 @@ hr
     
     
 }
-#botoes :nth-child(1)
+
+#pagSkill 
+{
+    display: block;
+    flex-direction: column;
+}
+
+#pagSkill div
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#pagSkill h1
+{
+    display: inline;
+    border-bottom: solid 2px rgb(235, 73, 132);
+    font-size: 25px;
+}
+
+#pagSkill div div
+{
+    width: 10%;
+    margin: 0px 50px 0 50px;
+    display: flex;
+}
+
+
+.botaoClick
 {
     box-sizing: border-box;
     border-bottom: solid 3px rgb(235, 73, 132) ;
+    border-left: none;
     color: rgb(235, 73, 132) ;
 }
 #botoes :nth-child(1):hover,#botoes :nth-child(2):hover,#botoes :nth-child(3):hover, #botoes :nth-child(4):hover
@@ -153,6 +183,9 @@ i:hover{
 
 @media (min-width:480px)
 {
+
+    
+
     #menu #botoes 
     {
         margin-top: 20px;
@@ -194,6 +227,25 @@ i:hover{
 
 @media (min-width:600px) 
 {
+
+
+    main
+    {
+    
+        width: 90%;
+        margin: 60px auto;
+        background-color: rgba(30, 26, 40, 0.767);
+        box-sizing: border-box;
+        display: flex;
+        backdrop-filter: grayscale() blur(10px);
+        box-shadow: 3px 3px 20px rgba(255, 255, 255, 0.719);
+        flex-wrap: wrap;
+    }
+    .conteudo div 
+{
+    margin: 50px 50px 50px 50px;
+}
+
     #menu #botoes 
     {
         margin-top: 20px;
@@ -239,13 +291,26 @@ i:hover{
 
 @media (min-width:801px)
  { 
+    main
+    {
+    
+        width: 85%;
+        margin: 60px auto;
+        background-color: rgba(30, 26, 40, 0.767);
+        box-sizing: border-box;
+        display: flex;
+        backdrop-filter: grayscale() blur(10px);
+        box-shadow: 3px 3px 20px rgba(255, 255, 255, 0.719);
+        flex-wrap: wrap;
+    }
     #menu #botoes 
     {
         margin-top: 20px;
-        margin-left: 15%;
+        margin-left: 20%;
         display: inline-block  !important;
         background: none;
         position: relative;
+        justify-content: center;
     }
  
     #foto a  img 
@@ -253,6 +318,10 @@ i:hover{
         margin-top: 20px;
     }
  
+    .conteudo div 
+{
+    margin: 50px 50px 50px 50px;
+}
     #foto a 
     {
         margin-top: 50px;
@@ -351,6 +420,9 @@ i:hover{
     text-align: justify;
     font-size: 18px;
     background: none;
+    cursor: pointer;
+    transition: all 0.3ms;
+
 }
 
 #foto a img
@@ -385,17 +457,17 @@ i:hover{
 {
     display: table;
 }
-.conteudo div 
+.conteudo div
 {
     margin: 50px 50px 0 50px;
 }
 
-.conteudo div p
+.conteudo #pagSobre p
 {
     margin-top: 50px;
     text-align: justify;
 }
-.conteudo div h1 
+.conteudo #pagSobre h1
 {
     display: inline;
     border-bottom: solid 2px rgb(235, 73, 132);
@@ -405,14 +477,14 @@ hr
 {
     color: rgb(235, 73, 132);
 }
-.conteudo div h2
+.conteudo #pagSobre h2
 {
     margin-top: 50px;
     font-size: 20px;
     text-align: center;
 }
 
-.conteudo div a 
+.conteudo #pagSobre a 
 {
 
     margin-top: 50px;
@@ -421,7 +493,33 @@ hr
     margin-bottom: 50px;
     
 }
-#botoes :nth-child(1)
+#pagSkill h1
+{
+    display: inline;
+    border-bottom: solid 2px rgb(235, 73, 132);
+    font-size: 25px;
+}
+
+#pagSkill div div
+{
+    width: 10%;
+    margin: -50px 30px 0 30px;
+    padding: 50px 20px 25px 20px;
+    display: flex;
+}
+#pagSkill div div p
+{
+    text-align: center;
+    padding-left: 5px;
+}
+
+#pagSkill div
+{
+    margin-top: 50px;
+    padding: 0;
+}
+
+.botaoClick
 {
     box-sizing: border-box;
     border-left: solid 3px rgb(235, 73, 132) ;
